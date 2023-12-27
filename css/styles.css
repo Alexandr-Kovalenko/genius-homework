@@ -1,0 +1,70 @@
+:root {
+  --color-primary-light: #ffffff;
+  --color-primary-brand: #2b7fff;
+  --color-primary-dark: #011c44;
+  --color-secondary-grey-dark: #4a4a4a;
+  --color-secondary-grey-light: #747272;
+  --color-secondary-blue: #011f4a;
+  --color-secondary-yellow: #ffd02b;
+  --color-text: #000000;
+}
+
+/* Base */
+body {
+  color: var(--color-secondary-blue);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Link */
+.link {
+  color: var(--color-secondary-blue);
+}
+
+.link:hover {
+  color: var(--color-primary-brand);
+}
+
+.link-footer {
+  color: var(--color-primary-light);
+}
+
+.link-footer:hover {
+  color: var(--color-primary-brand);
+}
+
+/* Hero-section */
+.hero-section {
+  color: var(--color-primary-brand);
+}
+
+/* Button */
+.button {
+  color: var(--color-primary-light);
+  background-color: var(--color-primary-brand);
+  border: 2px solid var(--color-primary-brand);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+/* Accent-text */
+.accent-text {
+  color: var(--color-primary-brand);
+}
+
+/* Adventages-list */
+.adventages {
+  color: var(--color-text);
+}
+
+/* Copyright */
+.copyright {
+  color: var(--color-secondary-grey-light);
+}
