@@ -1,3 +1,37 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+}
+
+/* play-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+/* play-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
 :root {
   --color-primary-light: #ffffff;
   --color-primary-brand: #2b7fff;
@@ -12,37 +46,53 @@
 /* Base */
 body {
   color: var(--color-secondary-blue);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+address {
+  font-style: normal;
 }
 
 ul {
   list-style-type: none;
 }
 
-/* Link */
+/* Header */
 .link {
   color: var(--color-secondary-blue);
+  text-decoration: none;
 }
 
 .link:hover {
   color: var(--color-primary-brand);
-}
-
-.link-footer {
-  color: var(--color-primary-light);
-}
-
-.link-footer:hover {
-  color: var(--color-primary-brand);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* Hero-section */
 .hero-section {
   color: var(--color-primary-brand);
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+}
+
+.text-under-button {
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 /* Button */
 .button {
   color: var(--color-primary-light);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
   background-color: var(--color-primary-brand);
   border: 2px solid var(--color-primary-brand);
   border-radius: 32px;
@@ -51,7 +101,15 @@ ul {
 
 .button:hover {
   color: var(--color-primary-dark);
+  font-weight: 700;
   background-color: transparent;
+}
+
+/* Text-titles */
+.text-titles {
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
 }
 
 /* Accent-text */
@@ -59,12 +117,41 @@ ul {
   color: var(--color-primary-brand);
 }
 
+/* About us section */
+.about-us {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.about-us span {
+  font-weight: 700;
+}
+
 /* Adventages-list */
 .adventages {
   color: var(--color-text);
+  line-height: 1.35;
 }
 
-/* Copyright */
+/* Procedures section */
+.procedures {
+  font-size: 22px;
+}
+
+/* Footer */
+.link-footer {
+  color: var(--color-primary-light);
+  font-size: 16px;
+}
+
+.link-footer:hover {
+  color: var(--color-primary-brand);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .copyright {
   color: var(--color-secondary-grey-light);
+  font-size: 13px;
 }
