@@ -8,86 +8,122 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container header-section">
         <nav>
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="Логотип beauty zone" />
-          </a>
-          <ul>
-            <li><a class="link" href="#about-us-section">Про нас</a></li>
-            <li><a class="link" href="#why-us-section">Чому ми</a></li>
-            <li>
-              <a class="link" href="#procedures-section">Наші процедури</a>
-            </li>
-            <li><a class="link" href="#contacts-section">Контакти</a></li>
-          </ul>
+          <div class="header-container">
+            <div class="header-logo">
+              <a href="./index.html">
+                <img src="./images/logo.svg" alt="Логотип beauty zone" />
+              </a>
+            </div>
+            <div class="header-menu">
+              <ul class="menu">
+                <li><a class="link" href="#about-us-section">Про нас</a></li>
+                <li><a class="link" href="#why-us-section">Чому ми</a></li>
+                <li>
+                  <a class="link" href="#procedures-section">Наші процедури</a>
+                </li>
+                <li><a class="link" href="#contacts-section">Контакти</a></li>
+              </ul>
+            </div>
+            <div class="header-icons">
+              <ul>
+                <li><a href="tel:+380960000007">+ 38(096)000000</a></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
     <main>
-      <section class="section">
+      <section>
         <div class="container">
-          <p>Косметологічна клініка</p>
-          <h1 class="hero-title" lang="en">Beauty Zone</h1>
-          <button class="button" type="button">Замовити дзвінок</button>
-          <p class="text-under-button">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
-          </p>
+          <div class="hero-container">
+            <div class="title-section">
+              <p>Косметологічна клініка</p>
+              <h1 class="hero-title" lang="en">Beauty Zone</h1>
+            </div>
+            <div class="button-section">
+              <button class="button" type="button">Замовити дзвінок</button>
+              <p class="text-under-button">
+                Запишись та отримай безкоштовну консультацію нашого косметолога
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="about-us-section section" id="about-us-section">
         <div class="container">
-          <h2 class="about-us-title text-titles">
-            Перевтілюйтесь в <span class="accent-text">beauty zone!</span>
-          </h2>
-          <p class="about-us">
-            Наша косметологічна клініка пропонує вам професійні послуги з
-            догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="about-us">
-            B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості та
-            приємний сервіс. Наші косметологічні процедури та препарати
-            допоможуть вам підтримувати свою красу та молодість. З нами краса
-            назавжди!
-          </p>
-          <img src="./images/image_1578.svg" alt="Обличчя жінки до процедури" />
-          <img
-            src="./images/image_1579.svg"
-            alt="Обличчя жінки після процедури"
-          />
+          <div class="about-us-flex">
+            <div class="about-us-text">
+              <h2 class="about-us-title text-titles">
+                Перевтілюйтесь в <span class="accent-text">beauty zone!</span>
+              </h2>
+              <p class="about-us">
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="about-us">
+                B <span>Beauty Zone</span> ми гарантуємо найвищі стандарти
+                якості та приємний сервіс. Наші косметологічні процедури та
+                препарати допоможуть вам підтримувати свою красу та молодість. З
+                нами краса назавжди!
+              </p>
+            </div>
+            <div class="about-us-image">
+              <img
+                src="./images/image_1578.svg"
+                alt="Обличчя жінки до процедури"
+              />
+              <img
+                src="./images/image_1579.svg"
+                alt="Обличчя жінки після процедури"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <section class="why-us-section section" id="why-us-section">
         <div class="container">
-          <h2 class="why-us-title text-titles">
-            Чому люди <span class="accent-text">обирають нас</span>
-          </h2>
-          <ul class="why-us">
-            <li>
-              Всі наші косметологи мають вищу медичну освіту та стаж роботи від
-              5 років
-            </li>
-            <li>
-              Використовуємо тільки професійне обладнання та косметику,
-              перевірену часом
-            </li>
-            <li>
-              Наша мета - підкреслити переваги та приховати недоліки, а не
-              переробити
-            </li>
-          </ul>
+          <div class="why-us-flex">
+            <h2 class="text-titles why-us-title">
+              Чому люди <span class="accent-text">обирають нас</span>
+            </h2>
+            <ul class="why-us">
+              <div class="why-us-cards">
+                <li class="why-us-item">
+                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                  від 5 років
+                </li>
+                <li class="why-us-item">
+                  Використовуємо тільки професійне обладнання та косметику,
+                  перевірену часом
+                </li>
+                <li class="why-us-item">
+                  Наша мета - підкреслити переваги та приховати недоліки, а не
+                  переробити
+                </li>
+              </div>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="section" id="procedures-section">
+      <section class="section procedures-section" id="procedures-section">
         <div class="container">
-          <h2 class="procedures-title text-titles">
-            Наші <span class="accent-text">процедури</span>
-          </h2>
-          <ul class="procedures">
-            <li>Маски для обличчя</li>
-            <li>Ін'єкції краси</li>
-            <li>Омолодження шкіри</li>
-          </ul>
+          <div class="procedures-flex">
+            <h2 class="procedures-title text-titles">
+              Наші <span class="accent-text">процедури</span>
+            </h2>
+            <ul class="procedures">
+              <div class="procedures-card">
+                <li class="procedures-item">Маски для обличчя</li>
+                <li class="procedures-item">Ін'єкції краси</li>
+                <li class="procedures-item">Омолодження шкіри</li>
+              </div>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section" id="contact-section">

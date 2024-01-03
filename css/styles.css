@@ -72,11 +72,13 @@ address {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   width: 100%;
-  max-width: 1288px;
+  max-width: 1488px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -93,22 +95,53 @@ ul {
 
 .link:hover {
   color: var(--color-primary-brand);
-  font-weight: 700;
   text-decoration: none;
 }
 
+.header-section {
+  padding: 32px 100px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+}
+
 /* Hero-section */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 736px;
+  padding-top: 16px;
+  padding-left: 206px;
+}
+
+.button-section {
+  max-width: 240px;
+}
+
 .hero-title {
   color: var(--color-primary-brand);
   font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 140px;
   line-height: 0.8;
+  margin: 0;
 }
 
 .text-under-button {
   font-size: 12px;
   line-height: 1.5;
+  margin: 14px 0 0 0;
 }
 
 /* Button */
@@ -145,17 +178,32 @@ ul {
 
 /* About us section */
 .about-us-section {
+  max-width: 1240px;
+  margin: 0 auto;
   padding-top: 126px;
   padding-bottom: 88px;
 }
+.about-us-flex {
+  display: flex;
+  gap: 32px;
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
 .about-us-title {
-  margin-bottom: 40px;
+  max-width: 530px;
+  margin: 0;
 }
 
 .about-us {
+  max-width: 710px;
   font-size: 22px;
   line-height: 1.7;
+  margin: 0;
 }
 
 .about-us span {
@@ -163,12 +211,37 @@ ul {
 }
 
 /* Why us section */
+.why-us-flex {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.why-us-cards {
+  display: flex;
+  gap: 56px;
+}
+
+.why-us-item {
+  display: flex;
+  align-content: center;
+  flex-basis: calc((100% - 112px) / 3);
+  padding: 24px 32px;
+  border: 1px solid gray;
+  border-radius: 32px;
+}
+
 .why-us-section {
   padding-top: 88px;
 }
 
 .why-us-title {
-  margin-bottom: 48px;
+  max-width: 432px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .why-us {
@@ -177,8 +250,34 @@ ul {
 }
 
 /* Procedures section */
+.procedures-section {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+.procedures-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.procedures-card {
+  display: flex;
+  gap: 16px;
+}
+
+.procedures-item {
+  display: flex;
+  justify-content: center;
+  flex-basis: calc((100% - 32px) / 3);
+  border: 1px solid gray;
+  border-radius: 4px 120px;
+}
+
 .procedures-title {
-  margin-bottom: 48px;
+  max-width: 510px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .procedures {
