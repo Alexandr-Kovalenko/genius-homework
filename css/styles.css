@@ -115,6 +115,20 @@ ul {
   gap: 56px;
 }
 
+.header-icons {
+  display: flex;
+  flex-basis: 160px;
+  justify-content: space-between;
+}
+
+.header-social {
+  fill: var(--color-primary-dark);
+}
+
+.header-social:hover {
+  fill: var(--color-primary-brand);
+}
+
 /* Hero-section */
 .hero-section {
   max-width: 1440px;
@@ -271,12 +285,6 @@ ul {
   margin: 0 auto;
 }
 
-.procedures-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-
 .procedures-card {
   display: flex;
   gap: 16px;
@@ -311,6 +319,27 @@ ul {
   color: var(--color-primary-light);
 }
 
+/* Carousel */
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--color-primary-dark);
+  border-radius: 50%;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  fill: var(--color-primary-light);
+  background-color: var(--color-primary-brand);
+  border: 1px solid var(--color-primary-brand);
+}
+
 /* Contact section */
 .contact-title {
   margin-bottom: 48px;
@@ -333,6 +362,20 @@ ul {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+}
+
+.footer-icons {
+  display: flex;
+  max-width: 174px;
+  justify-content: space-between;
+}
+
+.footer-social {
+  fill: var(--color-primary-light);
+}
+
+.footer-social:hover {
+  fill: var(--color-primary-brand);
 }
 
 .copyright {
