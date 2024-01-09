@@ -136,6 +136,7 @@ ul {
 /* Hero-section */
 .hero-section {
   max-width: 1440px;
+  height: 633px;
   margin: 0 auto;
   background-image: linear-gradient(
     89.38deg,
@@ -222,6 +223,7 @@ ul {
 
 .about-us-text {
   display: flex;
+  max-width: 709px;
   flex-direction: column;
   gap: 40px;
 }
@@ -229,6 +231,45 @@ ul {
 .about-us-title {
   max-width: 530px;
   margin: 0;
+}
+
+.about-us-image {
+  position: relative;
+  flex-basis: 499px;
+  height: 700px;
+}
+
+.women-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.women-after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.big-star,
+.medium-star,
+.small-star {
+  position: absolute;
+}
+
+.big-star {
+  top: 335px;
+  right: 295px;
+}
+
+.medium-star {
+  top: 32px;
+  right: -26px;
+}
+
+.small-star {
+  top: 270px;
+  right: 6px;
 }
 
 .about-us {
@@ -377,10 +418,22 @@ ul {
 
 /* Footer */
 .footer {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
   padding: 56px 100px;
   background-color: var(--color-primary-dark);
+}
+
+.footer::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 247px;
+  height: 152px;
+  background-image: url(../images/footer-cosmetic.png);
+  background-repeat: no-repeat;
+  content: '';
 }
 
 .footer-container {
@@ -449,4 +502,37 @@ ul {
 .copyright {
   color: var(--color-secondary-grey-light);
   font-size: 13px;
+}
+
+/* Modal window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  width: 723px;
+  height: 681px;
+  background-color: var(--color-primary-dark);
+  border-radius: 48px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
 }

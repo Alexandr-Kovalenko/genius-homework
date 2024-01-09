@@ -23,7 +23,7 @@
                 <li>
                   <a class="link" href="#procedures-section">Наші процедури</a>
                 </li>
-                <li><a class="link" href="#contacts-section">Контакти</a></li>
+                <li><a class="link" href="#contact-section">Контакти</a></li>
               </ul>
             </div>
             <ul class="header-icons">
@@ -62,7 +62,9 @@
               <h1 class="hero-title" lang="en">Beauty Zone</h1>
             </div>
             <div class="button-section">
-              <button class="button" type="button">Замовити дзвінок</button>
+              <button class="button modal-btn-open" type="button">
+                Замовити дзвінок
+              </button>
               <p class="text-under-button">
                 Запишись та отримай безкоштовну консультацію нашого косметолога
               </p>
@@ -90,12 +92,29 @@
             </div>
             <div class="about-us-image">
               <img
-                src="./images/women-before.jpg"
+                class="women-before"
+                src="./images/women-before.png"
                 alt="Обличчя жінки до процедури"
               />
               <img
-                src="./images/women-after.jpg"
+                class="women-after"
+                src="./images/women-after.png"
                 alt="Обличчя жінки після процедури"
+              />
+              <img
+                class="big-star"
+                src="./images/big-star.png"
+                alt="Велика зірочка"
+              />
+              <img
+                class="medium-star"
+                src="./images/medium-star.png"
+                alt="Середня зірочка"
+              />
+              <img
+                class="small-star"
+                src="./images/small-star.png"
+                alt="Маленька зірочка"
               />
             </div>
           </div>
@@ -248,5 +267,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
