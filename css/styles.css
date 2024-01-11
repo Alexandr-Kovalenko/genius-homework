@@ -629,7 +629,7 @@ input:focus {
   color: var(--color-secondary-grey-dark);
   text-align: center;
   margin-top: 8px;
-  margin-bottom: 42px;
+  margin-bottom: 0;
 }
 
 .terms-link {
