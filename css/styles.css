@@ -90,6 +90,15 @@ ul {
   padding: 48px 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* Header */
 .header {
   position: absolute;
@@ -193,7 +202,7 @@ ul {
 .button {
   color: var(--color-primary-light);
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
   background-color: var(--color-primary-brand);
@@ -207,7 +216,7 @@ ul {
 .button:hover {
   color: var(--color-primary-dark);
   font-weight: 700;
-  background-color: transparent;
+  background-color: var(--color-primary-light);
 }
 
 /* Text-titles */
@@ -429,8 +438,14 @@ ul {
 .contact-form {
   flex-basis: 423px;
   height: 481px;
+  padding: 48px 56px;
   background-color: var(--color-primary-dark);
   border-radius: 32px;
+}
+
+.form-input-main {
+  display: block;
+  margin-bottom: 16px;
 }
 
 /* Footer */
@@ -530,6 +545,7 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 32px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -544,15 +560,79 @@ ul {
 }
 
 .modal {
-  position: absolute;
-  width: 723px;
-  height: 681px;
+  position: relative;
+  width: 100%;
+  max-width: 723px;
+  height: 100%;
+  max-height: 681px;
+  padding: 42px 206px;
   background-color: var(--color-primary-dark);
   border-radius: 48px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
   position: absolute;
   top: 42px;
   right: 42px;
+}
+
+/* Form */
+.form-title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--color-primary-light);
+  margin-bottom: 40px;
+}
+
+.form-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--color-primary-light);
+  margin-bottom: 32px;
+}
+
+.form-input {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.input {
+  width: 100%;
+  padding: 18px 32px;
+  font-size: 13px;
+  line-height: 1.15;
+  border: 2px solid var(--color-secondary-grey-light);
+  border-radius: 32px;
+  background-color: transparent;
+  outline: none;
+  color: var(--color-primary-light);
+}
+
+input::placeholder {
+  color: var(--color-primary-light);
+}
+
+input:focus {
+  background-color: var(--color-secondary-grey-light);
+}
+
+.form-terms {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-secondary-grey-dark);
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 42px;
+}
+
+.terms-link {
+  color: var(--color-secondary-grey-dark);
+  text-underline-offset: 1px;
 }
