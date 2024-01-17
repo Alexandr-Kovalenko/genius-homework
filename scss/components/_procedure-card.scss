@@ -1,0 +1,33 @@
+.procedures-card {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  flex-basis: calc((100% - 32px) / 3);
+  height: 456px;
+  border-radius: 4px 120px;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    var(--color-primary-dark) 101.39%
+  );
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 4px 120px;
+  }
+
+  &__text {
+    max-width: 150px;
+    font-size: 22px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--color-primary-light);
+  }
+}

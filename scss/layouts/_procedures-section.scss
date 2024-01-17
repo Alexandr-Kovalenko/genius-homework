@@ -1,0 +1,24 @@
+.procedures-section {
+  max-width: 1216px;
+  margin: 0 auto;
+
+  &__title {
+    max-width: 510px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,10 @@
+.link {
+  color: var(--color-secondary-blue);
+  text-decoration: none;
+  transition-duration: 0.5s;
+
+  &:hover {
+    color: var(--color-primary-brand);
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,13 @@
+.terms {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-secondary-grey-dark);
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0;
+
+  &__link {
+    color: var(--color-secondary-grey-dark);
+    text-underline-offset: 1px;
+  }
+}

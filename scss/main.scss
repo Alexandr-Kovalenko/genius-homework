@@ -1,0 +1,25 @@
+@import './utils/fonts';
+@import './utils/keyframes';
+@import './utils/utils';
+@import './utils/variables';
+
+@import './base';
+
+@import './components/buttons';
+@import './components/carousel-buttons';
+@import './components/inputs';
+@import './components/general';
+@import './components/links';
+@import './components/procedure-card';
+@import './components/terms';
+@import './components/texts';
+
+@import './layouts/about-us-section';
+@import './layouts/body';
+@import './layouts/contact-section';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/modal';
+@import './layouts/procedures-section';
+@import './layouts/why-us-section';

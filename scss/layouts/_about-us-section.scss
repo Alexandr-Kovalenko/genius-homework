@@ -1,0 +1,79 @@
+.about-us-section {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-bottom: 88px;
+
+  &__flex {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__text {
+    display: flex;
+    max-width: 709px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__title {
+    max-width: 530px;
+    margin: 0;
+  }
+
+  &__paragraph {
+    max-width: 710px;
+    font-size: 22px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  &__image-container {
+    position: relative;
+    flex-basis: 499px;
+    height: 700px;
+  }
+
+  &__women-before {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__women-after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__big-star,
+  &__medium-star,
+  &__small-star {
+    position: absolute;
+  }
+
+  &__big-star {
+    top: 335px;
+    right: 295px;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  &__medium-star {
+    top: 32px;
+    right: -26px;
+    animation-name: boomerang;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  &__small-star {
+    top: 270px;
+    right: 6px;
+    animation-name: pulsar;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
+}

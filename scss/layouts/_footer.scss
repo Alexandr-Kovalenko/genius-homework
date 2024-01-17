@@ -1,0 +1,89 @@
+.footer {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 56px 100px;
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/background_2.svg);
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+
+    &:hover {
+      color: var(--color-primary-brand);
+      font-size: 16px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    max-width: 174px;
+    justify-content: space-between;
+  }
+
+  &__social {
+    fill: var(--color-primary-light);
+    transition-duration: 0.5s;
+
+    &:hover {
+      fill: var(--color-primary-brand);
+    }
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 100px;
+  }
+
+  &__logo,
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+  }
+
+  &__logo {
+    display: inline-block;
+  }
+
+  &__menu,
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__copyright {
+    color: var(--color-secondary-grey-light);
+    font-size: 13px;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 247px;
+    height: 152px;
+    background-image: url(../images/footer-cosmetic.png);
+    background-repeat: no-repeat;
+    content: '';
+  }
+}
