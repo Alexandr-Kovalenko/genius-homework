@@ -3,22 +3,23 @@
   margin: 0 auto;
 
   &__title {
-    max-width: 510px;
-    padding-bottom: 48px;
+    max-width: 250px;
+    padding-bottom: 24px;
     margin: 0 auto;
   }
 
-  &__container {
+  @media screen and (min-width: $bp-desktop) {
+    padding-bottom: 48px;
+  }
+
+  &__slider {
     display: flex;
     align-items: center;
     gap: 32px;
+    padding: 0 20px;
   }
 
-  &__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    gap: 16px;
+  &__container {
+    overflow: hidden;
   }
 }

@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: end;
   position: relative;
-  flex-basis: calc((100% - 32px) / 3);
   height: 456px;
   border-radius: 4px 120px;
   background-image: linear-gradient(
@@ -12,6 +11,12 @@
     rgba(1, 28, 68, 0.725825) 84.61%,
     var(--color-primary-dark) 101.39%
   );
+  border-radius: 4px 120px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-bottom: 48px;
+  }
 
   &__image {
     position: absolute;
@@ -25,9 +30,13 @@
 
   &__text {
     max-width: 150px;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.18;
     text-align: center;
     color: var(--color-primary-light);
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 22px;
   }
 }

@@ -24,7 +24,7 @@
   max-width: 723px;
   height: 100%;
   max-height: 681px;
-  padding: 42px 206px;
+  padding: 48px 32px;
   background-color: var(--color-primary-dark);
   border-radius: 48px;
   overflow-y: auto;
@@ -32,23 +32,36 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media screen and (min-width: $bp-desktop) {
+    padding: 42px 206px;
+  }
+
   &__btn-close {
     position: absolute;
-    top: 42px;
-    right: 42px;
+    top: 10px;
+    right: 20px;
     border: none;
     background-color: transparent;
     cursor: pointer;
   }
 
+  @media screen and (min-width: $bp-desktop) {
+    top: 42px;
+    right: 42px;
+  }
+
   &__title {
     font-family: 'Play', sans-serif;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 32px;
     line-height: 1.15;
     text-align: center;
     color: var(--color-primary-light);
     margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 64px;
+    }
   }
 
   &__text {
